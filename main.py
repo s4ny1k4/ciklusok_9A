@@ -17,3 +17,13 @@ if __name__ == '__main__':
 
     atlag = sum / darabszam
     print('átlag: ' + str(atlag))
+
+    for gyemant in diamonds.iterrows():
+        carat = gyemant[1]['carat']
+        if carat > atlag:
+           print(gyemant)
+
+    for gyemant in diamonds.iterrows():
+        color = gyemant[1]['color']
+        if color == 'H':
+           print(gyemant)
